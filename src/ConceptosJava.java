@@ -75,6 +75,42 @@ public class ConceptosJava {
         System.out.println("!" + bool1 + " : " + (!bool1));
         System.out.println("!" + bool2 + " : " + (!bool2));
 
+        // Operaciones con Strings
+        String saludo = "Xopa";
+        String nombre = "Petra";
+        String espacio = " ";
+
+        String mensaje = saludo + espacio + nombre + "!";
+        System.out.println("\nConcatenacion de cadenas: ");
+        System.out.println(mensaje);
+
+        String ejemplo = "   UIP es la mejor!    ";
+        System.out.println("\nOperaciones con cadenas: ");
+        System.out.println("Cadena original: \"" + ejemplo + "\"");
+        System.out.println("Longitud: " + ejemplo.length());
+        System.out.println("Mayusculas: " + ejemplo.toUpperCase());
+        System.out.println("Minusculas: " + ejemplo.toLowerCase());
+        System.out.println("Sin espacios: \"" + ejemplo.trim() + "\"");
+
+        if (ejemplo.length() > 5) {
+            System.out.println("Caracter en posicion 5: " + ejemplo.charAt(5));
+        } else {
+            System.out.println("La cadena es demasiado corta para obtener caracter.");
+        }
+
+        if (ejemplo.length() >= 7) {
+            System.out.println("Subcadena: " + ejemplo.substring(0, 7));
+        } else {
+            System.out.println("La cadena es demasiado corta para obtener caracter.");
+        }
+
+        System.out.println("Reemplazar 'mejor' por 'peor': " + ejemplo.replace("mejor", "peor"));
+
+        String ca1 = "Calixtra";
+        String ca2 = "calixtra";
+        System.out.println("Comparacion de cadenas:");
+        System.out.println("\"" + ca1 + "\" igual a \"" + ca2 + "\" ? : " + ca1.equals(ca2));
+        System.out.println("\"" + ca1 + "\" igual a \"" + ca2 + "\" ignorando mayuscula? : " + ca1.equalsIgnoreCase(ca2));
 
 
     }
