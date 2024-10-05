@@ -1,5 +1,6 @@
 public class ConceptosJava {
     public static void main(String[] args) {
+        // Conversion de Tipos de Datos
         int entero = 10;
         double doble = entero; // Conversion automatica (implicita)
         System.out.println("Conversion implicita de int a double:");
@@ -34,6 +35,7 @@ public class ConceptosJava {
             System.out.println("Error en la conversion de cadena a números... ");
         }
 
+        // Operadores Matematicos
         int a = 15;
         int b = 4;
 
@@ -54,5 +56,16 @@ public class ConceptosJava {
         System.out.println("Incremento: " + a);
         System.out.println("Decremento: " + b);
 
+        // Operaciones Relacionales
+        int m = 20;
+        int n = 18;
+
+        System.out.println("\nOperadores Relacionales");
+        System.out.println(m + " == " + n + " : " + (m == n));
+        System.out.println(m + " != " + n + " : " + (m != n));
+        System.out.println(m + " > " + n + " : " + (m > n));
+        System.out.println(m + " < " + n + " : " + (m < n));
+        System.out.println(m + " >= " + n + " : " + (m >= n));
+        System.out.println(m + " <= " + n + " : " + (m <= n));
     }
 }
